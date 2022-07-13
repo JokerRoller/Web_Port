@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 127, 80, 0.345);
+}
+#game {
+    width: 1000px;
+    height: 400px;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+#character {
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+    position: absolute;
+    top: 345px;
+    left: 25px;
+    background-image: url(/Mini_games/Dino/pictures/pngwing.com.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.animatejump {
+    animation: jump 400ms ease-in-out;
+}
+.animateduck {
+    animation: duck 500ms ease-in-out;
+}
+#block1 {
+    width: 25px;
+    height: 50px;
+    /* background-color: black; */
+    position: absolute;
+    left: 1000px;
+    top: 345px;
+    background-image: url(/Mini_games/Dino/pictures/designpb_003.png);
+    background-size: cover;
+}
+#block2 {
+    width: 25px;
+    height: 50px;
+    /* background-color: black; */
+    position: absolute;
+    left: 1000px;
+    top: 345px;
+    background-image: url(/Mini_games/Dino/pictures/designpb_003.png);
+    background-size: cover;
+}
+#block3 {
+    width: 25px;
+    height: 50px;
+    /* background-color: black; */
+    position: absolute;
+    left: 1000px;
+    top: 345px;
+    background-image: url(/Mini_games/Dino/pictures/designpb_003.png);
+    background-size: cover;
+}
+/* .start {
+    animation: block 2.5s linear;
+} */
+@keyframes jump {
+    0%{top: 345px;}
+    30%{top: 255px;}
+    80%{top: 255px;}
+    100%{top: 345px;}
+}
+@keyframes block {
+    0%{left: 1020px;}
+    100%{left: -40px;}
+}
+@keyframes duck {
+    0%{top: 350px;}
+    30%{top: 385px;}
+    70%{top: 385px;}
+    100%{top: 350px;}
+}
+.btn {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    box-shadow: 5px 5px 15px 5px #000000;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn:hover {
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    opacity: 0.7;
+}
+.road {
+    position: absolute;
+    width: 10000px;
+    height: 15px;
+    top: 385px;
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/75/00/98/1000_F_375009858_NhUqzAFfflvQ2Ks6rim6YbPFuATX4OtI.jpg);
+}
+.road-line {
+    width: 10000px;
+    position: absolute;
+    border: 1px solid black;
+    top: 382px
+}
+@keyframes road {
+    0%{left: 0px}
+    100%{left: -1060px;}
+
+}

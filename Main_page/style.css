@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+* {
+    margin: 0;
+    padding: 0
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+.welcome {
+    width: 100%;
+    height: 100%;
+    background-image: url(/Main_page/pictures/HCJ.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.hello1 {
+    color: white;
+    top: 10%;
+}
+.hello2 {
+    color: white;
+    top: 10%;
+}
+.hello3 {
+    color: white;
+    top: 10%;
+}
+.first_words {
+    position: relative;
+    height: 30%;
+    top: 4%;
+    font-family: 'Edu SA Beginner', cursive; 
+    font-size: 1rem;
+    text-align: center;
+    z-index: 3;
+}
+.btn1 {
+    position: relative;
+    top: 10%;
+    width: 30%;
+    height: 15%;
+    border: none;
+    background-color: rgb(128, 128, 238);
+    color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.btn1:hover {
+    cursor: pointer;
+    transform: scale(1.05);        
+}
+.btn1:active {
+    background-color: rgb(128, 128, 238);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transform: translateY(4px);
+}
+.just {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.nav {
+    height: 5%;
+}
+.nav_ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    background-color: black;
+}
+.nav_ul li {
+    margin-right: 1%;
+    font-size: 1.35rem;
+    color: white;
+    cursor: pointer;
+}
+.nav_ul li:hover {
+    color: brown;
+    transition: all 0.3s ease;
+}
+.project_li {
+    color: brown !important;
+}
+.project {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+.mini_games {
+    position: relative;
+    left: 1%;
+    width: 45%;
+    height: 50%;
+}
+.title_game {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.row_games {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.dino,
+.memory {
+    height: 100%;
+    width: 100%;
+}
+.dino_game {
+    width: 95%;
+    height: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+.memory_game {
+    width: 95%;
+    height: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    cursor: pointer;
+}
+.dino_game:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.memory_game:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.todo {
+    width: 25%;
+    height: 50%;
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo_a {
+    width: 100%;
+    height: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+}
+.todo_img {
+    width: 100%;
+    height: 100%;
+}
+.todo_img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.todo_title {
+    padding-bottom: 5px;
+}
+.api {
+    width: 25%;
+    height: 50%;
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.api_a {
+    width: 100%;
+    height: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+}
+.api_img {
+    width: 100%;
+    height: 100%;
+}
+
+.api_img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.api_title {
+    padding-bottom: 5px;
+}
