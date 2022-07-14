@@ -6,11 +6,16 @@ var projects = document.querySelector('.project_li');
 var sectionProject = document.querySelector('.project');
 var sectionAboutMe = document.querySelector('.about_me');
 var sectionContact = document.querySelector('.contact');
+var submit = document.querySelector('.contact_btn');
+var inputName = document.getElementById('name');
+var inputEmail = document.getElementById('email');
+var inputText = document.getElementById('text');
 // Event listeners
 startBtn.addEventListener('click', start);
 about.addEventListener('click', color);
 contact.addEventListener('click', color);
 projects.addEventListener('click', color);
+submit.addEventListener('click', alertF);
 // Functions
 // scrolls down the page on btn press
 function start () {
@@ -52,5 +57,12 @@ function contactF(){
     sectionAboutMe.classList.remove('active_display');
     sectionContact.classList.remove('active_display');
     sectionContact.classList.add('active_display')
+}
+function alertF() {
+    if (inputName.value === '' || inputEmail.value === '' || inputText.value === '') {
+        alert('Please enter text')
+    } else {
+        alert ('Your messige has been sent')
+    }
 }
  
