@@ -317,11 +317,20 @@ textarea {
         font-size: 4.5rem;
     }
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1366px) {
     .text {
-        font-size: 1.15rem;
+        font-size: 0.95rem;
     }
     .title {
         font-size: 4.25rem;
+    }
+    #name {
+        margin-bottom: 0.5%;
+    }
+    #email {
+        margin-bottom: 0.5%;
+    }
+    .contact_btn {
+        border: 1.5px white solid;
     }
 }
