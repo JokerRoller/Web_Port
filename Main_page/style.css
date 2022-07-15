@@ -333,4 +333,7 @@ textarea {
     .contact_btn {
         border: 1.5px white solid;
     }
+    .hello1, .hello2, .hello3 {
+        font-size: 1.4rem;
+    }
 }
